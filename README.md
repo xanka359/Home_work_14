@@ -14,14 +14,18 @@
 1. **Allure отчет**
 <img src="tests/resources/Allure_report.jpg" width="600" height="300"/>  
 ___
+
 2. **Allure testops**
 <img src="tests/resources/allure_testops.jpg" width="600" height="300"/>  
 ___
+
 3. **Screenshot from runnig**
 <img src="tests/resources/screenshot.png" width="600" height="300"/>
 ___
+
 4. **Jira**  
 <img src="tests/resources/jira.jpg" width="450" height="300"/>
 ___
+
 5. **Telegram**  
 <img src="tests/resources/telegram.jpg" width="300" height="300"/>
