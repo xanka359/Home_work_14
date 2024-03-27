@@ -4,3 +4,6 @@ tests/allure-results
 # Idea
 .idea
 .venv*
+.env
+/notifications/
+/main.py
