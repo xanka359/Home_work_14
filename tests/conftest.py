@@ -34,9 +34,10 @@ def setup_browser(request):
     )
 
     browser.config.driver = driver
-    # Масштабирование страницы
-    browser.driver.set_window_size(1920, 1080)  # Устанавливаем размер окна браузера
-    browser.driver.set_window_position(0, 0)  # Устанавливаем позицию окна браузера на экране
+    browser.config.base_url = 'https://www.neoflex.ru/'
+    browser.config.window_width = 1920
+    browser.config.window_height = 1080
+    browser.driver.set_window_position(0, 0)
 
     yield browser
 

@@ -1,8 +1,11 @@
 import allure
+from selene import be
+from selene.support.shared.jquery_style import s
 
-from neoflex.neoflex_page import NeoflexPage
+from neoflex.pages.neoflex_career import neoflex_career
+from neoflex.pages.neoflex_main_menu import  neoflex_page
+from neoflex.pages.neoflex_search import neoflex_search
 
-neoflex_page = NeoflexPage()
 
 def test_main_menu():
 
@@ -33,15 +36,21 @@ def test_main_menu():
 def test_search_field():
 
     with allure.step("Открыть главную страницу сайта Neoflex"):
-        neoflex_page.open()
+        neoflex_search.open()
 
     with allure.step("Нажать на лупу на верхней панеле сайта"):
-        neoflex_page.search_possibility()
+        neoflex_search.search_for_vacancy()
+
+    with allure.step("Проверить результаты поиска"):
+        neoflex_search.search_possibility()
 
 def test_appropriate_vacancy():
 
     with allure.step("Открыть главную страницу сайта Neoflex"):
-        neoflex_page.open()
+        neoflex_career.open()
 
     with allure.step("Произвести поиск в разделе Карьера по направлению тестирования"):
-        neoflex_page.vacancy_in_career()
+        neoflex_career.vacancy_in_career()
+
+    with allure.step("Проверить есть ли подходящие вакансии в результатах поиска"):
+        neoflex_career.search_appropriate_vacancy()
