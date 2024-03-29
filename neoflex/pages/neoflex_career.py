@@ -10,7 +10,6 @@ class NeoflexCareer:
 
     def open(self):
         browser.open('/')
-        browser.config.timeout = 10  #time.sleep(3)
         return self
 
     def select_career_form(self):
