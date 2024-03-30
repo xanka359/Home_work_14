@@ -11,21 +11,21 @@
 ***  
 ### Выбран сайт [Neoflex](https://www.neoflex.ru/)
 
-1. **Allure отчет**
-<img src="resources/Allure_report.jpg" width="600" height="300"/>  
+1. **Allure отчет**  
+<img src="resources/Allure_report.jpg" width="1000" height="400"/>  
 ___  
 
-2. **Allure testops**
-<img src="resources/allure_testops.jpg" width="600" height="300"/>  
+2. **Allure testops**  
+<img src="resources/allure_testops.jpg" width="1000" height="450"/>  
 ___  
 
-3. **Screenshot from runnig**
-<img src="resources/screenshot.png" width="600" height="300"/>
+3. **Screenshot from runnig**  
+<img src="resources/screenshot.png" width="1000" height="450"/>
 ___  
 
 4. **Jira**  
-<img src="resources/jira.jpg" width="450" height="300"/>
+<img src="resources/jira.jpg" width="750" height="450"/>
 ___  
 
 5. **Telegram**  
-<img src="resources/telegram.jpg" width="300" height="300"/>
+<img src="resources/telegram.jpg" width="400" height="400"/>
