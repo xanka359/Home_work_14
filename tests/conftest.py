@@ -8,9 +8,10 @@ from selene import browser
 from utils import attach
 
 
-@pytest.fixture( autouse=True)
+@pytest.fixture(autouse=True)
 def load_env():
     load_dotenv()
+
 
 @pytest.fixture(scope='function', autouse=True)
 def setup_browser(request):
@@ -34,11 +35,10 @@ def setup_browser(request):
     )
 
     browser.config.driver = driver
-    browser.config.base_url = 'https://www.neoflex.ru/'
+    browser.config.base_url = 'https://www.neoflex.ru'
     browser.config.window_width = 1920
     browser.config.window_height = 1080
-    browser.driver.set_window_position(0, 0)
-    browser.config.driver.implicitly_wait(4)
+    browser.config.timeout = 10
 
     yield browser
 
